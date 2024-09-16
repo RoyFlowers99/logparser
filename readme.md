@@ -27,7 +27,7 @@
 
 Run the program from the command line, specifying the log file and the type of analysis you want to perform:
 
-```python3 main.py [OPTIONS] <logfile>```
+```python3 logparser.py [OPTIONS] <logfile>```
 
 #### Options:
 
