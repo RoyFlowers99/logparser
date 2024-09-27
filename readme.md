@@ -1,6 +1,6 @@
 # LogParser
 
-**LogParser** is a simple Python tool that scans log files to identify and count IP addresses, HTTP status codes, and HTTP methods from server logs (e.g., NGINX, Apache).
+**LogParser** is a simple Python tool that scans log files to identify and count different unique values such as IP addresses and HTTP statuses & methods.
 
 ## Features
 - **IP Address Counting**: Detects and counts the occurrences of each unique IP address in the log file.
