@@ -31,11 +31,7 @@ Run the program from the command line, specifying the log file and the type of a
 
 #### Options:
 
-    --ipv4 or -ip: Count and display unique IP addresses.
-
-    --status or -s: Count and display HTTP status codes.
-
-    --method or -m: Count and display HTTP methods.
+`--help` or `-h` for the full list of current options.
 
 #### Examples:
 
