@@ -10,9 +10,11 @@ def run_script(script, file):
 def main():
     parser = argparse.ArgumentParser(description='Command line controller.')
 
-    parser.add_argument('--ipv4', '-ip', action='store_true', help='Run ipv4_count.py')
-    parser.add_argument('--status', '-s', action='store_true', help='Run http_status.py')
-    parser.add_argument('--method', '-m', action='store_true', help='Run http_method.py')
+    parser.add_argument('-ip', '--ipv4', action='store_true', help='counts unique IP addresses')
+    parser.add_argument('-bc', '--bytes', action='store_true', help='searches for "[num] bytes" in lines containing user inputted string')
+    parser.add_argument('-s', '--status', action='store_true', help='counts HTTP status codes')
+    parser.add_argument('-m', '--method', action='store_true', help='counts HTTP methods')
+    parser.add_argument('-x', '--extension', action='store_true', help='counts various File Extensions')
     parser.add_argument('file', type=str, help='File to be analyzed')
 
     args = parser.parse_args()
@@ -23,8 +25,12 @@ def main():
         run_script('http_status.py', args.file)
     elif args.method:
         run_script('http_method.py', args.file)
+    elif args.extension:
+        run_script('file_ext.py', args.file)
+    elif args.bytes:
+        run_script('byte_count.py', args.file)
     else:
-        print("Please specify a valid flag! -> (-ip, -s, -m)")
+        print("Please specify a valid flag! -> (-ip, -s, -m...)")
 
 if __name__ == "__main__":
     main()
