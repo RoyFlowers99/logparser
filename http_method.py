@@ -1,4 +1,5 @@
 #Looks for HTTP methods
+
 import re, sys
 
 log = sys.argv[1]

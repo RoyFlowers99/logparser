@@ -1,4 +1,5 @@
 #Looks for HTTP status codes
+
 import re, sys
 
 log = sys.argv[1]
