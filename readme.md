@@ -21,13 +21,13 @@
 
 2. Ensure Python 3 is installed on your system.
 
-    ```python3 --version```
+    ```python --version```
 
 ## Usage
 
 Run the program from the command line, specifying the log file and the type of analysis you want to perform:
 
-```python3 logparser.py [OPTIONS] <logfile>```
+```python logparser.py [OPTIONS] <logfile>```
 
 #### Options:
 
@@ -37,15 +37,15 @@ Run the program from the command line, specifying the log file and the type of a
 
 To count IP addresses:
 
-`python3 logparser.py -ip /path/to/access.log`
+`python logparser.py -ip /path/to/access.log`
 
 To analyze HTTP status codes:
 
-`python3 logparser.py -s /path/to/access.log`
+`python logparser.py -s /path/to/access.log`
 
 To count HTTP methods:
 
-`python3 logparser.py -m /path/to/access.log`
+`python logparser.py -m /path/to/access.log`
 
 ## License
 
